@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contratação Pensão</title>
+  <link
+  rel="icon"
+  href="img/logobbrICONE.ico"
+  type="image/x-icon"
+  >
+</head>
+<body>
+  <div class="conteudo">
+    <h1>Contratação Pensão 30% De Desconto</h1>
+
+    <form id="formPensao">
+      <label>Quantidade de Diárias</label>
+      <select name="diaria" required>
+        <option value="1">1 Diária</option>
+        <option value="2">2 Diárias</option>
+        <option value="3">3 Diárias</option>
+        <option value="4">4 Diárias</option>
+        <option value="5">5 Diárias</option>
+        <option value="6">6 Diárias</option>
+        <option value="7">7 Diárias</option>
+      </select>
+
+      <label>Quantidade de Hóspedes</label>
+      <select name="hospede" required>
+        <option value="1">1 Adulto</option>
+        <option value="2">2 Adultos</option>
+        <option value="3">2 Adultos e 1 Criança</option>
+        <option value="4">2 Adultos e 2 Crianças</option>
+        <option value="5">3 Adultos</option>
+        <option value="6">3 Adultos e 1 Criança</option>
+        <option value="7">4 Adultos</option>
+      </select>
+
+      <label>Tipo de Refeição</label>
+      <select name="refeicao" required>
+        <option value="CAFÉ">Café da Manhã</option>
+        <option value="MEIA_PENSAO">Meia Pensão</option>
+        <option value="PENSAO_COMPLETA">Pensão Completa</option>
+      </select>
+
+
+<label>Tipo de Contratação</label>
+<select name="tipo_contratacao" required>
+    <option value="com_desconto">Com Desconto (30%)</option>
+    <option value="sem_desconto">Sem Desconto</option>
+</select>
+
+      <button type="submit">Calcular Valor</button>
+    </form>
+
+    <div id="resultado">
+      Valor Total
+    </div>
+  </div>
+<script src="calculadora.js"></script>
+</body>
+</html>
